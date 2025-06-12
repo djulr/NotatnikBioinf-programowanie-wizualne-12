@@ -58,7 +58,7 @@ namespace pw12
         {
             ListBox sessionList = new ListBox();
             Button newSessionBtn = new Button() { Text = "Nowa sesja" };
-            Button addEntryBtn = new Button() { Text = "Dodaj wpis" };
+            Button addEntryBtn = new Button() { Text = "Dodaj wpis do sesji" };
             Button exportPdfBtn = new Button() { Text = "Eksportuj PDF" };
             ListBox entryList = new ListBox();
             int? selectedSessionId = null;
@@ -83,15 +83,15 @@ namespace pw12
                 entryList.Size = new DrawingSize(500, 400);
 
                 newSessionBtn.Location = new Point(10, 420);
-                newSessionBtn.Size = new DrawingSize(120, 40);
+                newSessionBtn.Size = new DrawingSize(200, 40);
                 newSessionBtn.Click += (s, e) => CreateSession();
 
-                addEntryBtn.Location = new Point(130, 420);
-                addEntryBtn.Size = new DrawingSize(120, 40);
+                addEntryBtn.Location = new Point(240, 420);
+                addEntryBtn.Size = new DrawingSize(300, 40);
                 addEntryBtn.Click += (s, e) => AddEntry();
 
-                exportPdfBtn.Location = new Point(250, 420);
-                exportPdfBtn.Size = new DrawingSize(120, 40);
+                exportPdfBtn.Location = new Point(570, 420);
+                exportPdfBtn.Size = new DrawingSize(200, 40);
                 exportPdfBtn.Click += (s, e) => ExportToPdf();
 
                 Controls.Add(sessionList);
