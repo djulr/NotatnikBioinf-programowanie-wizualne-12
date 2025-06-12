@@ -83,12 +83,15 @@ namespace pw12
                 entryList.Size = new DrawingSize(500, 400);
 
                 newSessionBtn.Location = new Point(10, 420);
+                newSessionBtn.Size = new DrawingSize(120, 40);
                 newSessionBtn.Click += (s, e) => CreateSession();
 
                 addEntryBtn.Location = new Point(130, 420);
+                addEntryBtn.Size = new DrawingSize(120, 40);
                 addEntryBtn.Click += (s, e) => AddEntry();
 
                 exportPdfBtn.Location = new Point(250, 420);
+                exportPdfBtn.Size = new DrawingSize(120, 40);
                 exportPdfBtn.Click += (s, e) => ExportToPdf();
 
                 Controls.Add(sessionList);
